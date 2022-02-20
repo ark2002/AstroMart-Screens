@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | AstroMart</title>
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/common.css">
+  <link rel="stylesheet" href="/listingpage/listingpage.css">
+  <link rel="stylesheet" href="https://astro-ui.netlify.app/main.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <header class="header flex--row">
+    <a href="/index.html">
+      <div class="header__logo-container flex--row">
+        <img src="/assets/zodiaclogo.png" alt="logo image" class="logo__img" />
+        <h2 class="header__logo">AstroMart</h2>
+      </div>
+    </a>
+    <div class="navbar__search-container flex--row">
+      <input type="text" class="navbar__search input__txt" placeholder="Search" />
+      <button class="navbar__search-btn btn">
+        <span class="material-icons search__btn-icon">search</span>
+      </button>
+    </div>
+    <nav class="navbar__nav flex--row">
+      <ul>
+        <li>
+          <a href=""><span class="material-icons" title="View Cart">shopping_cart</span></a>
+        </li>
+        <li>
+          <a href=""><span class="material-icons" title="View Wishlist">favorite_border</span></a>
+        </li>
+        <li>
+          <a href=""><span class="material-icons" title="Account">account_circle</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="listingpage__container flex--row">
+    <div class="filter flex--column">
+      <div class="filter__top flex--row">
+        <h1 class="secondary__font text-align--center category__label heading3">
+          Filter
+        </h1>
+        <button class="btn btn-color--primary btn-font--secondary filter__clear">
+          Clear
+        </button>
+      </div>
+      <h1 class="secondary__font text-align--center filter__label heading4">
+        Category
+      </h1>
+      <select name="category__list" id="category__list" class="secondary__font category__list">
+        <option value="any">Any</option>
+        <option value="jewellery">Jewellery</option>
+        <option value="clothing">Clothing</option>
+        <option value="Spiritual">Spiritual</option>
+        <option value="accesories">Accessories</option>
+      </select>
+      <h1 class="secondary__font text-align--center filter__label heading4">Max-Price</h1>
+      <input type="range" name="max__price-slider" id="max__price-slider" class="filter__slider" data-price-input='{
+          "0": "500",
+          "1": "1000",
+          "2": "1,500",
+          "3": "2,000",
+          "4": "2,500",
+          "5": "3,500",
+          "6": "5,000",
+          "7": "7,500",
+          "8": "10,000",
+          "9": "15,000+"                        
+        }'>
+      <h1 class="secondary__font text-align--center filter__label heading4">Rating</h1>
+      <div class="rating__container">
+        <input type="radio" id="4star__above" name="rating__filter" value="4star__above" class="filter__radio" />
+        <label for="4star__above" class="secondary__font heading4 filter__label">4 star & above </label><br />
+      </div>
+      <div class="rating__container">
+        <input type="radio" id="3star__above" name="rating__filter" value="3star__above" class="filter__radio" />
+        <label for="3star__above" class="secondary__font heading4 filter__label">3 star & above</label><br />
+      </div>
+      <div class="rating__container">
+        <input type="radio" id="2star__above" name="rating__filter" value="2star__above" class="filter__radio" />
+        <label for="2star_above" class="secondary__font heading4 filter__label">2 star & above</label>
+      </div>
+      <div class="rating__container">
+        <input type="radio" id="1star__above" name="rating__filter" value="1star__above" class="filter__radio" />
+        <label for="1star_above" class="secondary__font heading4 filter__label">1 star & above</label>
+      </div>
+      <h1 class="secondary__font text-align--center filter__label heading4">Sort By</h1>
+      <div class="sort__container">
+        <input type="radio" id="price__lowtohigh" name="sort__filter" value="price__lowtohigh" class="filter__radio" />
+        <label for="price__lowtohigh" class="secondary__font heading4 filter__label">Price: Low to High</label><br />
+      </div>
+      <div class="sort__container">
+        <input type="radio" id="price__hightolow" name="sort__filter" value="price__hightolow" class="filter__radio" />
+        <label for="price__hightolow" class="secondary__font heading4 filter__label">Price: High to Low</label><br />
+      </div>
+    </div>
+
+    <div class="productlist__container flex--column">
+      <h1 class="secondary__font productlist__heading">All Products</h1>
+      <div class="productlist flex--row">
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product1_img.jpeg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Amethyst Cluster</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 6200/-</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product2_img.jpeg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Obsidian Pyramid</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 5500/-</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product3_img.jpeg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Lapis Sphere</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 6700</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product4_img.jpeg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Sun & Moon Hoodie</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 1800/-</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product5_img.jpg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Zodiac Keychain</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 450/-</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product6_img.jpg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Zodiac Rings</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 1200/-</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product7_img.jpg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Zodiac Pendant</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 500/-</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product8_img.jpg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Zodiac Woodbox</h2>
+              <h4 class="card__subtitle secondary__font">Rs. 1500/-</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product9_img.jpg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Card Template</h2>
+              <h4 class="card__subtitle secondary__font">by Aryak Lahane</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product10_img.jpg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Card Template</h2>
+              <h4 class="card__subtitle secondary__font">by Aryak Lahane</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product11_img.jpeg" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Card Template</h2>
+              <h4 class="card__subtitle secondary__font">by Aryak Lahane</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product12_img.png" alt="picsum image" class="card__image" />
+                <span class="material-icons card__wishlist">favorite_border</span>
+              </div>
+            </div>
+            <div class="card__header">
+              <h2 class="card__subtitle primary__font">Card Template</h2>
+              <h4 class="card__subtitle secondary__font">by Aryak Lahane</h4>
+            </div>
+          </div>
+          <div class="card__footer">
+            <div class="card__actions flex--row">
+              <button class="card__txtbtn">Buy Now</button>
+              <button class="card__txtbtn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer listingpage__footer">
+    <hr />
+    <div class="footer__links text__medium primary__font flex--row">
+      <a href="">Store Policy</a>
+      <div class="vl"></div>
+      <a href="">Contact Us</a>
+      <div class="vl"></div>
+      <a href="">Support Our Work</a>
+    </div>
+    <p class="text__xsmall text-align--center primary__font">
+      All images and content are copyright protected, ©2020 AstroMart
+    </p>
+    <div class="footer__socials">
+      <a href="https://github.com/ark2002"><i class="fab fa-github icon"></i></a>
+      <a href="https://www.linkedin.com/in/aryaklahane"><i class="fab fa-linkedin icon"></i></a>
+      <a href="https://medium.com/@aryakprakashlahane"><i class="fab fa-medium icon"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
