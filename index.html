@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>landing page</title>
+  <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="https://astro-ui.netlify.app/main.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="landingpage__container flex--column">
+    <header class="header flex--row">
+      <a href="">
+        <div class="header__logo-container flex--row">
+          <img src="/assets/zodiaclogo.png" alt="logo image" class="logo__img" />
+          <h2 class="header__logo">AstroMart</h2>
+        </div>
+      </a>
+      <div class="navbar__search-container flex--row">
+        <input type="text" class="navbar__search input__txt" placeholder="Search" />
+        <button class="navbar__search-btn btn">
+          <span class="material-icons search__btn-icon">search</span>
+        </button>
+      </div>
+      <nav class="navbar__nav flex--row">
+        <ul>
+          <li>
+            <a href=""><span class="material-icons" title="View Cart">shopping_cart</span></a>
+          </li>
+          <li>
+            <a href=""><span class="material-icons" title="View Wishlist">favorite_border</span></a>
+          </li>
+          <li>
+            <a href=""><span class="material-icons" title="Account">account_circle</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="banner1__container flex--row">
+      <div class="banner1__left flex--column">
+        <h1 class="heading1 title banner1__title">AstroMart</h1>
+        <p class="text__medium subtitle">
+          A perfect place for all the Astroheads out there.
+        </p>
+        <button class="btn btn-color--tertiary btn-font--secondary">
+          Shop Now
+        </button>
+      </div>
+      <img src="/assets/zodiaclogo.png" alt="" class="banner1__img" />
+    </div>
+
+    <div class="banner2__container">
+      <img src="/assets/banner_2.webp" alt="banner_1" class="banner2" />
+      <h1 class="heading1 banner2__heading text-align--center">Welcome to the Zodiac</h1>
+    </div>
+
+    <div class="banner3__container flex--column">
+      <h1 class="heading1 title banner3__title text-align--center primary__font">Spiritual Solutions</h1>
+      <div class="landingpage__cards flex--row">
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product1_img.jpeg" alt="image" class="card__image" />
+                <span class="card__badge">new!!</span>
+              </div>
+            </div>
+            <div class="card__header flex--column">
+              <h3 class="card__subtitle">Amethyst Cluster</h3>
+              <p class="card__subtitle">Rs: 6200/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product2_img.jpeg" alt="image" class="card__image" />
+              </div>
+            </div>
+            <div class="card__header flex--column">
+              <h3 class="card__subtitle">Obsidian Pyramid</h3>
+              <p class="card__subtitle">Rs: 5500/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product3_img.jpeg" alt="image" class="card__image" />
+              </div>
+            </div>
+            <div class="card__header flex--column">
+              <h3 class="card__subtitle">Lapis Sphere</h3>
+              <p class="card__subtitle">Rs: 6700/-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-color--primary btn__outline btn-font--secondary">
+        View More
+      </button>
+    </div>
+
+    <div class="banner4__container">
+      <img src="/assets/banner_4.jpg" alt="" />
+      <div class="banner4__qoute-wrapper">
+        <h3 class="heading3 italic banner4__qoute">
+          “Astrology is a Language. If you understand this language, The Sky
+          Speaks to You.”
+        </h3>
+        <h2 class="heading2 text-align--right">- Dane Rudhyar</h2>
+      </div>
+    </div>
+
+    <div class="banner5__container flex--column ">
+      <h1 class="heading1 title banner3__title text-align--center primary__font">Latest Arrivals</h1>
+      <div class="landingpage__cards flex--row">
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product4_img.jpeg" alt="image" class="card__image" />
+                <span class="card__badge">Few left!</span>
+              </div>
+            </div>
+            <div class="card__header flex--column">
+              <h3 class="card__subtitle">Sun & Moon Hoodie</h3>
+              <p class="card__subtitle">Rs: 1800/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product5_img.jpg" alt="image" class="card__image" />
+              </div>
+            </div>
+            <div class="card__header flex--column">
+              <h3 class="card__subtitle">Zodiac Keychain</h3>
+              <p class="card__subtitle">Rs: 450/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="card flex--column">
+          <div class="card--hover flex--column">
+            <div class="card__aside">
+              <div class="card__figure">
+                <img src="/assets/product6_img.jpg" alt="image" class="card__image" />
+              </div>
+            </div>
+            <div class="card__header flex--column">
+              <h3 class="card__subtitle">Zodiac Rings</h3>
+              <p class="card__subtitle">Rs: 1200/-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-color--primary btn-font--secondary btn__outline">
+        View More
+      </button>
+    </div>
+
+    <footer class="footer">
+      <hr />
+      <div class="footer__links text__medium primary__font flex--row">
+        <a href="">Store Policy</a>
+        <div class="vl"></div>
+        <a href="">Contact Us</a>
+        <div class="vl"></div>
+        <a href="">Support Our Work</a>
+      </div>
+      <p class="text__xsmall text-align--center primary__font">
+        All images and content are copyright protected, ©2020 AstroMart
+      </p>
+      <div class="footer__socials">
+        <a href="https://github.com/ark2002"><i class="fab fa-github icon"></i></a>
+        <a href="https://www.linkedin.com/in/aryaklahane"><i class="fab fa-linkedin icon"></i></a>
+        <a href="https://medium.com/@aryakprakashlahane"><i class="fab fa-medium icon"></i></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
