@@ -3,7 +3,6 @@
   font-family: var(--primary-font-family);
   background-color: var(--white-color);
   align-items: center;
-  gap: 0;
   flex-shrink: 2;
   justify-items: center;
   align-items: center;
@@ -48,7 +47,7 @@
   transform: translate(-50%, -50%);
   font-family: var(--primary-font-family);
   color: var(--white-color);
-  text-shadow: 0 0 7px #fff;
+  text-shadow: 0 0 7px var(--white-color);
 }
 
 .banner2 {
@@ -131,7 +130,7 @@ hr {
   background-color: var(--black-color);
   padding: 2rem 0rem;
   text-align: center;
-  color: white;
+  color: var(--white-color);
   margin-top: 5rem;
 }
 
