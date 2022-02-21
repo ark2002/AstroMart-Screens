@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign-up | AstroMart</title>
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/common.css" />
+  <link rel="stylesheet" href="https://astro-ui.netlify.app/main.css">
+  <link rel="stylesheet" href="/signuppage/signuppage.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="signuppage__container flex--column">
+    <header class="header flex--row">
+      <a href="/index.html">
+        <div class="header__logo-container flex--row">
+          <img src="/assets/zodiaclogo.png" alt="logo image" class="logo__img" />
+          <h2 class="header__logo">AstroMart</h2>
+        </div>
+      </a>
+      <div class="navbar__search-container flex--row">
+        <input type="text" class="navbar__search input__txt" placeholder="Search" />
+        <button class="navbar__search-btn btn">
+          <span class="material-icons search__btn-icon">search</span>
+        </button>
+      </div>
+      <nav class="navbar__nav flex--row">
+        <ul>
+          <li>
+            <a href="/cartmanagement/cartpage.html"><span class="material-icons"
+                title="View Cart">shopping_cart</span></a>
+          </li>
+          <li>
+            <a href="/wishlistpage/wishlistpage.html"><span class="material-icons"
+                title="View Wishlist">favorite_border</span></a>
+          </li>
+          <li>
+            <a href="/loginpage/loginpage.html"><span class="material-icons" title="Account">account_circle</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="signup__container flex--column">
+      <form action="" class="signup__form flex--column">
+        <h1 class="signup__header heading2 title primary__font">Sign-Up</h1>
+        <input type="email" placeholder="Email address" class="input__txt username secondary__font" required />
+        <input type="text" placeholder="Username" class="input__txt username secondary__font" required />
+        <input type="text" placeholder="Password" class="input__txt password secondary__font" required />
+        <input type="password" placeholder="Confirm password" class="input__txt password secondary__font" required />
+        <button class="btn btn-color--tertiary btn-font--secondary">
+          signup
+        </button>
+        <a href="/loginpage/loginpage.html" class="btn btn-transparent--primary btn-font--secondary text__small">
+          Existing account
+        </a>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <hr />
+      <div class="footer__links text__medium primary__font flex--row">
+        <a href="">Store Policy</a>
+        <div class="vl"></div>
+        <a href="">Contact Us</a>
+        <div class="vl"></div>
+        <a href="">Support Our Work</a>
+      </div>
+      <p class="text__xsmall text-align--center primary__font">
+        All images and content are copyright protected, ©2020 AstroMart
+      </p>
+      <div class="footer__socials">
+        <a href="https://github.com/ark2002"><i class="fab fa-github icon"></i></a>
+        <a href="https://www.linkedin.com/in/aryaklahane"><i class="fab fa-linkedin icon"></i></a>
+        <a href="https://medium.com/@aryakprakashlahane"><i class="fab fa-medium icon"></i></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
