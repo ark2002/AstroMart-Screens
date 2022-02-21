@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist | AstroMart</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="https://astro-ui.netlify.app/main.css">
+    <link rel="stylesheet" href="/wishlistpage/wishlistpage.css" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wishlistpage__container flex--column">
+        <header class="header flex--row">
+            <a href="/index.html">
+                <div class="header__logo-container flex--row">
+                    <img src="/assets/zodiaclogo.png" alt="logo image" class="logo__img" />
+                    <h2 class="header__logo">AstroMart</h2>
+                </div>
+            </a>
+            <div class="navbar__search-container flex--row">
+                <input type="text" class="navbar__search input__txt" placeholder="Search" />
+                <button class="navbar__search-btn btn">
+                    <span class="material-icons search__btn-icon">search</span>
+                </button>
+            </div>
+            <nav class="navbar__nav flex--row">
+                <ul>
+                    <li>
+                        <a href="/cartmanagement/cartpage.html"><span class="material-icons" title="View Cart">shopping_cart</span></a>
+                    </li>
+                    <li>
+                        <a href="/wishlistpage/wishlistpage.html"><span class="material-icons" title="View Wishlist">favorite_border</span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="material-icons" title="Account">account_circle</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wishlist__container flex--column">
+            <h1 class="wishlist__heading primary__font heading2">WishList</h1>
+            <div class="wishlist__item flex--row">
+                <img src="/assets/product1_img.jpeg" alt="product_img" class="wishlist__img">
+                <div class="wishlist__copy flex--column">
+                    <h2 class="wishlist__name secondary__font">Amethyst Cluster</h2>
+                    <p class="wishlist__info secondary__font text__small">Amethyst is one of the most effective crystals
+                        for healing people, plants that won’t grow, and calming animals.</p>
+                    <button class="btn btn-color--primary btn-font--secondary">Add to Cart</button>
+                </div>
+                <div class="wishlist__action flex--column">
+                    <h3 class="wishlist__product-cost secondary__font">Rs. 6200/-</h3>
+                    <button class="wishlist__selection">
+                        <span class="material-icons">favorite</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="wishlist__item flex--row">
+                <img src="/assets/product4_img.jpeg" alt="product_img" class="wishlist__img">
+                <div class="wishlist__copy flex--column">
+                    <h2 class="wishlist__name secondary__font">Sun & Moon Hoodie</h2>
+                    <p class="wishlist__info secondary__font text__small">A Black hoddie made out of the best quality
+                        cotton to provide you with supreme comfort with the a Sun And the moon design printed on the
+                        back</p>
+                    <button class="btn btn-color--primary btn-font--secondary">Add to Cart</button>
+                </div>
+                <div class="wishlist__action flex--column">
+                    <h3 class="wishlist__product-cost secondary__font">Rs. 1800/-</h3>
+                    <button class="wishlist__selection">
+                        <span class="material-icons">favorite</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="wishlist__item flex--row">
+                <img src="/assets/product1_img.jpeg" alt="product_img" class="wishlist__img">
+                <div class="wishlist__copy flex--column">
+                    <h2 class="wishlist__name secondary__font">Amethyst Cluster</h2>
+                    <p class="wishlist__info secondary__font text__small">Amethyst is one of the most effective crystals
+                        for healing people, plants that won’t grow, and calming animals.</p>
+                    <button class="btn btn-color--primary btn-font--secondary">Add to Cart</button>
+                </div>
+                <div class="wishlist__action flex--column">
+                    <h3 class="wishlist__product-cost secondary__font">Rs. 6200/-</h3>
+                    <button class="wishlist__selection">
+                        <span class="material-icons">favorite</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <hr />
+            <div class="footer__links text__medium primary__font flex--row">
+                <a href="">Store Policy</a>
+                <div class="vl"></div>
+                <a href="">Contact Us</a>
+                <div class="vl"></div>
+                <a href="">Support Our Work</a>
+            </div>
+            <p class="text__xsmall text-align--center primary__font">
+                All images and content are copyright protected, ©2020 AstroMart
+            </p>
+            <div class="footer__socials">
+                <a href="https://github.com/ark2002"><i class="fab fa-github icon"></i></a>
+                <a href="https://www.linkedin.com/in/aryaklahane"><i class="fab fa-linkedin icon"></i></a>
+                <a href="https://medium.com/@aryakprakashlahane"><i class="fab fa-medium icon"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
